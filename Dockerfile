@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:12.6
 
 RUN apt-get update -y && apt-get install -y make socat curl xxd sqlite3 --no-install-recommends
 RUN groupadd --gid 999 service 
